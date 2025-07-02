@@ -200,3 +200,22 @@ ul.interests-list {
 @media (max-width: 800px) {
     .achievements-list { flex-direction: column; align-items: center; }
 }
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 24px 0;
+}
+.photo-gallery img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 4px solid #f8a5cf;
+    box-shadow: 0 2px 12px rgba(250,120,177,0.11);
+    transition: transform 0.16s;
+}
+.photo-gallery img:hover {
+    transform: scale(1.07) rotate(-2deg);
+}
